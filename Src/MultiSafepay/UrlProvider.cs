@@ -42,9 +42,8 @@ namespace MultiSafepay
             }
                 .Where(x => !String.IsNullOrEmpty(x.Value));
 
-            var queryString = String.Join("&", queryStringComponents.Select(x => String.Format("{0}={1}", x.Key, x.Value)));
-
-
+            var queryString = String.Join("&", queryStringComponents.Select(x => String.Format("{0}={1}", x.Key, x.Value)).ToArray());
+ 
             if (!String.IsNullOrEmpty(queryString))
             {
                 return FormatLanguage(_baseUrl + "gateways?" + queryString, _langaugeCode);

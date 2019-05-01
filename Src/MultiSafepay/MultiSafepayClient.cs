@@ -33,14 +33,6 @@ namespace MultiSafepay
             
             _urlProvider = new UrlProvider(apiUrl, languageCode);
         }
-        /// <summary>
-        /// Helper - returns an object as Json string
-        /// </summary>
-        /// <param name="obj"></param>
-        public String serializeObject(dynamic obj)
-        {
-            return JsonConvert.SerializeObject(obj, Formatting.Indented);
-        }
 
         #region API Methods
 

@@ -6,7 +6,5 @@ namespace MultiSafepay.Model
     {
         [JsonProperty("unit")]
         public string Unit { get; set; }
-        [JsonProperty("value")]
-        public dynamic Value { get; set; }
     }
 }

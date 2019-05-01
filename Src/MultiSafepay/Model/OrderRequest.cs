@@ -1,5 +1,4 @@
-﻿using System.Dynamic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
 namespace MultiSafepay.Model
@@ -14,7 +13,6 @@ namespace MultiSafepay.Model
             AmountInCents = amountInCents;
             CurrencyCode = currencyCode;
             PaymentOptions = paymentOptions;
-            CustomInfo = new ExpandoObject();
         }
 
         public static OrderRequest createDirect(string issuerId, string orderId, string description, int amountInCents, string currencyCode, PaymentOptions paymentOptions)

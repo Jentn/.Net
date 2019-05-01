@@ -56,7 +56,5 @@ namespace MultiSafepay.Model
         public string PaymentUrl { get; set; }
         [JsonProperty("html_form")]
         public string HtmlForm { get; set; }
-        [JsonProperty("custom_info")]
-        public dynamic CustomInfo { get; set; }
     }
 }

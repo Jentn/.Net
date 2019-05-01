@@ -1,5 +1,4 @@
-﻿using System.Dynamic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
 namespace MultiSafepay.Model
@@ -26,8 +25,6 @@ namespace MultiSafepay.Model
         public string Var2 { get; set; }
         [JsonProperty("var3")]
         public string Var3 { get; set; }
-        [JsonProperty("custom_info")]
-        public dynamic CustomInfo { get; set; }
         [JsonProperty("items")]
         public string Items { get; set; }
         [JsonProperty("manual")]
